@@ -1,25 +1,32 @@
 import styled from "styled-components";
 
-export const HomeCon = styled.div`
-  width: 100%;
-  min-height: 90vh;
-  background-color: #ffffff;
+
+export const NewblogCon = styled.div`
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 7rem;
-  h3 {
-    font-size: 2.5rem;
+  gap: 1rem;
+  img {
+    border: solid 2px red;
+    height: 15rem;
+    width: 30rem;
   }
-`;
-export const Cards = styled.div`
-  background-color: aqua;
-  min-height: 40vh;
-  width: 100%;
-  div {
-    background-color: red;
+  input {
+    font-size: 1.2rem;
+    height: 2rem;
     width: 20rem;
-    height: 20rem;
+  }
+  textarea {
+    height: 10rem;
+    width: 20rem;
+    resize: none;
+  }
+  button {
+    height: 2rem;
+    width: 20rem;
+    background-color: #01bbbb;
+    border: solid 0;
+    border-radius: 5px;
+    color: white;
   }
 `;

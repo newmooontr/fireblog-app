@@ -1,16 +1,23 @@
 import React from 'react'
-import { HomeCon } from '../styled/NewBlogStyled'
-import {Cards} from "../styled/NewBlogStyled";
+import {NewblogCon} from  "../styled/NewBlogStyled";
 
-const NewBlog = () => {
+
+
+function NewBlog() {
   return (
-    <HomeCon>
-      <h3>Dashboard</h3>
-      <Cards>
-        <div></div>
-      </Cards>
-    </HomeCon>
-  )
+    <NewblogCon>
+      <img src="assets/blok.png" alt="" />
+      <h2>New Blog</h2>
+      <label htmlFor="title">Title</label>
+      <input placeholder="Title" id="title" type="text" />
+      <label htmlFor="url">Image URL</label>
+      <input placeholder="Image URL" id="url" type="text" />
+      <label htmlFor="content">Content</label>
+      <textarea placeholder="Content" name="content" id="content"></textarea>
+      <button>SUBMIT</button>
+    </NewblogCon>
+  );
 }
 
-export default NewBlog
+export default NewBlog;
+
